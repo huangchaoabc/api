@@ -1,8 +1,8 @@
-# 安装php
+# 安装PHP
 ```
 pkg install php
 ```
-# 本地代理
+# PHP服务器启动命令
 ```
 php -S 0.0.0.0:8080 content.php
 ```
