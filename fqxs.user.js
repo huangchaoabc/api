@@ -14,6 +14,7 @@
 // @connect           api5-normal-sinfonlineb.fqnovel.com
 // @connect           i.snssdk.com
 // @namespace         https://github.com/tampermonkey
+// @updateURL         https://gitee.com/juvenile-with-hemorrhoids/ttt/raw/master/fqxs.user.js
 // ==/UserScript==
 
 (function() {
