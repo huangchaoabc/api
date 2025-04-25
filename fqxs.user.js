@@ -26,15 +26,15 @@
         SERVER_DEVICE_ID: "4427064614334905",
         AID: "1967",
         VERSION_CODE: "62532",
-        MAX_CONCURRENT: 20,
-        RETRY_TIMES: 5,
-        RETRY_DELAY: 500
+        MAX_CONCURRENT: 20,  //批量下载数量
+        RETRY_TIMES: 5,  //重试次数
+        RETRY_DELAY: 500  //重试延迟
     };
 
     // 界面样式
     GM_addStyle(`.tamper-container{position:fixed;top:220px;right:20px;background:#fff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);padding:15px;z-index:9999;width:200px;font-size:14px;line-height:1.3}.tamper-button{background:#ff6b00;color:#fff;border:none;border-radius:20px;padding:10px 20px;margin:10px 0;cursor:pointer;font-size:14px;font-weight:bold;transition:all 0.2s;width:100%;text-align:center}.tamper-button:hover{background:#ff5500}.tamper-button:disabled{background:#ccc;cursor:not-allowed}.stats-container{display:flex;justify-content:space-between;margin-top:15px;font-size:12px}.stat-item{display:flex;flex-direction:column;align-items:center;flex:1;padding:5px}.stat-label{margin-bottom:5px;color:#666}.stat-value{font-weight:bold;font-size:16px}.total-value{color:#333}.success-value{color:#4CAF50}.failed-value{color:#F44336}`);
 
-    // 加密解密类（保持不变）
+    // 加密解密类
     class FqCrypto {
         constructor(key) {
             this.key = this.hexToBytes(key);
@@ -136,7 +136,7 @@
         }
     }
 
-    // API客户端类（保持不变）
+    // API客户端类
     class FqClient {
         constructor(config) {
             this.config = config;
