@@ -11,3 +11,5 @@ php -S 0.0.0.0:8080 content.php
 http://localhost:8080/content.php?item_id=7478158011601521688
 ```
 # 完结撒花🌺🌺🌺
+
+[fff](otpauth://totp/GitHub:huangchaoabc?secret=VOHWPS23CN4UAWED&issuer=GitHub)
